@@ -74,6 +74,7 @@ Because Replit wired up real back-end endpoints (not just simulated JavaScript),
  
 ## References
 
+- Claude: Claude.ai
 - IDOR: https://portswigger.net/web-security/access-control/idor
 - OWASP Top 10:2025 — A01 Broken Access Control: https://owasp.org/Top10/A01_2021-Broken_Access_Control/
-- Optus breach analysis: https://www.upguard.com/blog/how-did-the-optus-data-breach-happen
+- Optus breach analysis: https://securityscorecard.com/blog/5-lessons-from-the-optus-data-breach-for-telecom-and-third-party-risk/
