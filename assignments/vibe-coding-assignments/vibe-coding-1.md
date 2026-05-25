@@ -14,7 +14,7 @@ I built a **side-by-side interactive security demo** called `BRAC_DEMO`. There a
  
 The demo is organized into scenarios. For this write-up, I focus on **Scenario 1: User Profile Access**. The viewer selects a target user from a dropdown and clicks **FIRE_REQUEST** to simulate an API call.
  
-- The **left panel (Vulnerable Implementation)** calls `GET /api/demo/vulnerable/profile/{id}` with no ownership check. The server returns the full profile — including SSN, salary, email, and phone number — regardless of who is asking. A `200 OK` is returned even when Bob is requesting Alice's private data.
+- The **left panel (Vulnerable Implementation)** calls `GET /api/demo/vulnerable/profile/{id}` with no ownership check. The server returns the full profile including SSN, salary, email, and phone number regardless of who is asking. A `200 OK` is returned even when Bob is requesting Alice's private data.
 - The **right panel (Secure Implementation)** calls `GET /api/demo/secure/profile/{id}` and enforces an ownership check on the server. If the session user does not own the requested profile and is not an admin, the server returns `403 Forbidden` with an explanation, and no data is leaked.
 The contrast makes the vulnerability immediately visible: the same URL, the same request, two completely different behaviors depending on whether the server bothers to check who is asking.
  
@@ -54,7 +54,6 @@ Access control failures are the **#1 vulnerability** in the OWASP Top 10:2025 be
  
 - Developers assume attackers won't guess or enumerate IDs.
 - Authorization checks are added as an afterthought rather than designed in from the start.
-- Role and ownership checks exist on the front end (a button is hidden) but not on the back end (the API still responds to direct requests).
 
 ### Real-world incident
  
@@ -74,7 +73,7 @@ Because Replit wired up real back-end endpoints (not just simulated JavaScript),
  
 ## References
 
-- Claude: Claude.ai
+- Claude: https://Claude.ai 
 - IDOR: https://portswigger.net/web-security/access-control/idor
 - OWASP Top 10:2025 — A01 Broken Access Control: https://owasp.org/Top10/A01_2021-Broken_Access_Control/
 - Optus breach analysis: https://securityscorecard.com/blog/5-lessons-from-the-optus-data-breach-for-telecom-and-third-party-risk/
