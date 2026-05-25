@@ -1,1 +1,9 @@
+# Vibe Coding Assignment 1 — Broken Access Control (A01:2025)
+ 
+## 1. Vibe Coding Tool: Replit
 
+For this assignment, I used **Replit** as my vibe coding tool. I chose it because:
+ 
+- It runs entirely in the browser with no local setup: no installs, no terminal, no environment configuration needed on my Mac.
+- Its built-in AI agent generates a full working application from a plain-English prompt, letting me focus on the security concepts rather than boilerplate code.
+- It instantly hosts the app at a public URL, so the demo is shareable without any separate deployment step.
