@@ -58,7 +58,7 @@ Access control failures are the **#1 vulnerability** in the OWASP Top 10:2025 be
 
 ### Real-world incident
  
-**Optus Data Breach (2022):** An attacker discovered an unauthenticated API endpoint that returned customer PII — names, dates of birth, phone numbers, passport numbers — when queried with sequential customer IDs. No authentication or authorization was required. Approximately 9.8 million current and former customers were affected, making it one of the largest data breaches in Australian history.
+**Optus Data Breach (2022):** An attacker discovered an unauthenticated API endpoint that returned customer PII (names, dates of birth, phone numbers, passport numbers) when queried with sequential customer IDs. No authentication or authorization was required. Approximately 9.8 million current and former customers were affected, making it one of the largest data breaches in Australian history.
  
 ## 4. Problems Encountered and Solutions
  
