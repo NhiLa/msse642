@@ -74,11 +74,12 @@ The preview inside Replit is not public by default. I had to click **Publish** i
  
 ## Screenshots
 
-![Scenario 1 — Same request on the secure endpoint returns 403](images/Alice.png)
-*The secure endpoint detects that Bob does not own Alice's profile and returns 403 Forbidden — no data is leaked.*
+![Alice requested her own information, and it works on both cases](images/Alice.png) 
+*Alice can access her information in any situation.*
  
 ![Scenario 1 — Bob requesting Alice's profile on the vulnerable endpoint](images/Bob.png)
-*Bob is the active session, targeting Alice (ID: 1). The vulnerable endpoint returns Alice's full profile including SSN and salary with a 200 OK.*
+*On the left side, Bob is the active session, targeting Alice (ID: 1). The vulnerable endpoint returns Alice's full profile, including SSN and salary, with a 200 OK.*
+*On the right side, the secure endpoint detects that Bob does not own Alice's profile and returns 403 Forbidden; no data is leaked.*
  
 ---
  
