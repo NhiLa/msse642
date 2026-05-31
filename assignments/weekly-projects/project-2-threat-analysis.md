@@ -10,3 +10,6 @@ The Georgia Hiking Club (GHC) is a volunteer-run, nonprofit organization based i
 
 ### 1.2 Organization Description
 The Georgia Hiking Club is a registered non-profit with no physical office and no paid staff. The organization is governed by volunteers, including a Chief Technology Officer (CTO) who is responsible for maintaining the web server and web application. Funding comes from annual member dues and business sponsorships. Because the club operates entirely online and handles both personal health information (medical conditions, fitness notes) and financial transactions (membership fees, trip payments), it faces security obligations comparable to a small business handling sensitive personal data. 
+
+### 1.3 Deployment Environment
+The GHC web application will be deployed on a cloud-hosted infrastructure using a major cloud provider (e.g., AWS or Azure). Since this is a voluntary organization, lacking a physical office and operating with a limited IT staff, therefore, this choice eliminates the burden of hardware maintenance while simultaneously providing built-in tools for network segmentation, access control, and system monitoring.
