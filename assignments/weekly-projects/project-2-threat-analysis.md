@@ -13,3 +13,18 @@ The Georgia Hiking Club is a registered non-profit with no physical office and n
 
 ### 1.3 Deployment Environment
 The GHC web application will be deployed on a cloud-hosted infrastructure using a major cloud provider (e.g., AWS or Azure). Since this is a voluntary organization, lacking a physical office and operating with a limited IT staff, therefore, this choice eliminates the burden of hardware maintenance while simultaneously providing built-in tools for network segmentation, access control, and system monitoring.
+
+The deployment will consist of at minimum two network tiers:
+- A Front End Web Server, accessible from the internet.
+- A Backend Database Server, accessible only from the Front End Web Server and never directly from the internet.
+
+A cloud-managed firewall (security group / network access control list) will enforce traffic rules between these two tiers. All traffic from the public internet to the web server will be encrypted via TLS (HTTPS). Backups and audit logs will be stored in isolated cloud storage separate from the production environment.
+
+### 1.4 Secure Concepts Applicable to the Application
+**Authentication & Password Policy:** The project description explicitly notes that the site was previously compromised via a brute-force attack due to weak password enforcement. Strong password policies, multi-factor authentication, account lockout mechanisms, and rate limiting on login attempts are necessary controls.
+
+**Authorization & Role-Based Access Control (RBAC):** The application has three meaningfully different permission levels — Guest, Member, and Administrator (Trip Leader / System Admin). Strict enforcement of these boundaries is critical. For example, a regular member must never be able to view another member's medical records or access the treasury portal.
+
+**Sensitive Personal Data (PII & Medical Information):** Member profiles contain medical conditions and performance notes that are confidential. These fields require encryption at rest, strict access controls limiting visibility to Trip Leaders and System Admins.
+
+**Financial Data & Payment Portal:** The payment portal collects membership dues and excursion fees. This introduces PCI-DSS-adjacent concerns: financial data must be encrypted in transit and at rest, and access to the treasury portal must be tightly restricted to System Admins only.
