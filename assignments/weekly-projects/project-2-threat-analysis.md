@@ -23,7 +23,7 @@ A cloud-managed firewall (security group/network access control list) will enfor
 ### 1.4 Secure Concepts Applicable to the Application
 **Authentication & Password Policy:** The project description explicitly notes that the site was previously compromised via a brute-force attack due to weak password enforcement. Strong password policies, multi-factor authentication, account lockout mechanisms, and rate-limiting of login attempts are necessary controls.
 
-**Authorization & Role-Based Access Control (RBAC):** The application has three meaningfully different permission levels — Guest, Member, and Administrator (Trip Leader / System Admin). Strict enforcement of these boundaries is critical. For example, a regular member must never be able to view another member's medical records or access the treasury portal.
+**Authorization & Role-Based Access Control (RBAC):** The application has three meaningfully different permission levels: Guest, Member, and Administrator (Trip Leader/System Admin). Strict enforcement of these boundaries is critical. For example, a regular member must never be able to view another member's medical records or access the treasury portal.
 
 **Sensitive Personal Data (PII & Medical Information):** Member profiles contain medical conditions and performance notes that are confidential. These fields require encryption at rest, strict access controls limiting visibility to Trip Leaders and System Admins.
 
