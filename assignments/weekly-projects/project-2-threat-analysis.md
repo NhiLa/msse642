@@ -37,6 +37,7 @@ A cloud-managed firewall (security group/network access control list) will enfor
  
 ### Deliverable 2A: Architecture Diagram
 
+![GHC Network Architecture Diagram](../images/Architecture Diagram.drawio.png)
 
 **IP Address Summary:**
  
