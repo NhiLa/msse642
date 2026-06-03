@@ -37,14 +37,14 @@ A cloud-managed firewall (security group/network access control list) will enfor
  
 ### Deliverable 2A: Architecture Diagram
 
-![GHC Network Architecture Diagram](../images/Architecture-Diagram.drawio.png)
+![GHC Network Architecture Diagram](../../images/Architecture-Diagram.drawio.png)
 
 **IP Address Summary:**
  
 | Component            | Public IP      | Private IP   |
 |----------------------|----------------|--------------|
 | Front End Web Server | 203.0.113.10   | 10.0.1.10    |
-| Backend DB Server    | *(none)*       | 10.0.2.20    |
+| Backend DB Server    | none           | 10.0.2.20    |
 | Guest Browser        | varies         | N/A          |
 | Member Browser       | varies         | N/A          |
 | Admin Browser        | varies         | N/A          |
@@ -53,11 +53,33 @@ A cloud-managed firewall (security group/network access control list) will enfor
  
 ### Deliverable 2B: STRIDE Threat Model
  
-#### 1. Spoofing — Impersonation of Legitimate Users
+#### 1. Spoofing - Impersonation of Legitimate Users
 
 The GHC application was previously compromised via a brute-force attack on login credentials, confirming that spoofing is a real and demonstrated threat. The application currently lacks enforced password complexity, multi-factor authentication, and account lockout. All of which are standard countermeasures for spoofing. Mitigation requires enforcing strong passwords, implementing MFA (especially for admin roles), adding login rate limiting and account lockout after repeated failures, and logging all authentication events for review.
 
-#### 2. Tampering — Unauthorized Modification of Data
+#### 2. Tampering - Unauthorized Modification of Data
 
 The application description explicitly anticipates database tampering as a risk. Tampered data in this application could take many forms: a malicious actor might modify a member's event completion record to erase a pattern of no-shows, alter a medical record to hide a condition from trip leaders, manipulate payment records to avoid dues, or tamper with waiting list positions to gain access to a popular trip. Mitigations include prepared statements / parameterized queries to prevent SQL injection, strict input validation on all user-supplied fields, integrity hashing of critical records, immutable audit logs stored outside the production database, and file integrity monitoring on the web server.
+
+#### 3. Information Disclosure - Exposure of Confidential Data
+ 
+The GHC application stores several categories of sensitive information, like member medical conditions, trip leader physical and medical records, performance notes written by trip leaders about specific members, and financial data including payment history. Information disclosure threats arise in multiple ways. Mitigations include server-side authorization checks on every sensitive data request (never trust the client), encryption of data at rest (especially the medical and financial fields), and restricted access to backup files.
+
+#### 4. Elevation of Privilege — Gaining Unauthorized Access Levels
+ 
+The three-tier privilege model (Guest → Member → Trip Leader / Admin) is only as strong as the enforcement of its boundaries. Elevation of privilege attacks seek to gain access to functionality beyond what is authorized. For example:
+
+- A Guest could attempt to directly access member-only URLs without being logged in. 
+- A Member could attempt to access trip leader functions by crafting direct API calls that bypass the UI. 
+- A Trip Leader could attempt to access System Admin functions, such as the treasury portal or account management. 
+
+Mitigations include enforcing role-based access control at the server for every protected endpoint (never relying on UI hiding alone), rejecting any client-side privilege claims, conducting regular penetration tests of the role boundary enforcement, and applying the principle of least privilege so that each role has access only to what is strictly required.
+
+#### 5. Denial of Service - Disruption of Application Availability
+ 
+Because the GHC web application is described as "the core of the business" without which "the club could not exist," availability is a significant security concern. Denial of Service (DoS) threats could prevent members from registering for events during a high-demand registration window, block payment processing before a trip deadline, or prevent the CTO from managing the system during an incident. Mitigations include deploying a Web Application Firewall (WAF) with rate-limiting rules, placing the application behind a cloud-based DDoS protection service, and defining and testing an incident response and recovery plan.
+
+---
+ 
+### Deliverable 2C: OWASP Threat Model
 
