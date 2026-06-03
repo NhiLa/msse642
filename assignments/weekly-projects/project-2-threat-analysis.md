@@ -55,11 +55,11 @@ A cloud-managed firewall (security group/network access control list) will enfor
  
 #### 1. Spoofing - Impersonation of Legitimate Users
 
-The GHC application was previously compromised via a brute-force attack on login credentials, confirming that spoofing is a real and demonstrated threat. The application currently lacks enforced password complexity, multi-factor authentication, and account lockout. All of which are standard countermeasures for spoofing. Mitigation requires enforcing strong passwords, implementing MFA (especially for admin roles), adding login rate limiting and account lockout after repeated failures, and logging all authentication events for review.
+The GHC application was previously compromised via a brute-force attack on login credentials, confirming that spoofing is a real and demonstrated threat. The application currently lacks enforced password complexity, multi-factor authentication, and account lockout. Mitigation requires enforcing strong passwords, implementing MFA (especially for admin roles), adding login rate limiting and account lockout after repeated failures, and logging all authentication events for review.
 
 #### 2. Tampering - Unauthorized Modification of Data
 
-The application description explicitly anticipates database tampering as a risk. Tampered data in this application could take many forms: a malicious actor might modify a member's event completion record to erase a pattern of no-shows, alter a medical record to hide a condition from trip leaders, manipulate payment records to avoid dues, or tamper with waiting list positions to gain access to a popular trip. Mitigations include prepared statements / parameterized queries to prevent SQL injection, strict input validation on all user-supplied fields, integrity hashing of critical records, immutable audit logs stored outside the production database, and file integrity monitoring on the web server.
+The application description explicitly anticipates database tampering as a risk. Tampered data in this application could take many forms: a malicious actor might modify a member's event completion record to erase a pattern of no-shows, alter a medical record to hide a condition from trip leaders, manipulate payment records to avoid dues, or tamper with waiting list positions to gain access to a popular trip. Mitigations include prepared statements/parameterized queries to prevent SQL injection, and file integrity monitoring on the web server.
 
 #### 3. Information Disclosure - Exposure of Confidential Data
  
@@ -83,3 +83,43 @@ Because the GHC web application is described as "the core of the business" witho
  
 ### Deliverable 2C: OWASP Threat Model
 
+#### 1. Assessment Scope — What's on the Line?
+ 
+The scope of this threat model is the entire GHC web application. The assets at risk include:
+ 
+- Member PII and medical data.
+- Trip leader credentials and certifications.
+- Financial data.
+- Application availability.
+- Authentication infrastructure.
+- Data integrity of event records.
+
+The trusted boundary lies between the internet and the front-end web server (enforced by a perimeter firewall/WAF), and between the front-end web server and the backend database server (enforced by an internal firewall). The backend database has no public-facing interface and is never directly accessible from the internet.
+
+#### 2. Vulnerabilities — What Are They?
+ 
+- A01: Broken Access Control (OWASP Top 10 #1)
+- A02: Cryptographic Failures (OWASP Top 10 #2)
+- A03: Injection (OWASP Top 10 #3)
+- A07: Identification and Authentication Failures (OWASP Top 10 #7)
+- A09: Security Logging and Monitoring Failures (OWASP Top 10 #9)
+- A05: Security Misconfiguration (OWASP Top 10 #5)
+- A04: Insecure Design (OWASP Top 10 #4)
+
+#### 3. Countermeasures — What Can You Do About It?
+
+- Authentication hardening: Enforce password complexity requirements (minimum length, character classes). Implement account lockout after 5–10 failed login attempts per account. 
+- Data protection: Encrypt sensitive database fields (medical conditions, payment records). Ensure backups are encrypted and access-controlled.
+- Logging and monitoring: Implement server-side audit logging for all authentication events, role-sensitive data access, and all create/update/delete operations on member and event records. 
+- Payment portal: Do not store full payment card data. Restrict treasury portal access to the System Admin role only and log all access.
+
+#### 4. Prioritized Risks — Listed in Order
+
+| Priority | Risk | 
+|----------|------|
+| **1** | Brute-force / credential stuffing attack on login | 
+| **2** | Unauthorized access to confidential member medical data | 
+| **3** | Elevation of privilege (Member → Admin functions) | 
+| **4** | Financial data exposure or manipulation in payment portal | 
+| **5** | Lack of audit logging enabling undetected tampering | 
+| **6** | Security misconfiguration (exposed DB port, default credentials) | 
