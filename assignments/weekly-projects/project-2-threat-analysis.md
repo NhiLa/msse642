@@ -94,8 +94,6 @@ The scope of this threat model is the entire GHC web application. The assets at 
 - Authentication infrastructure.
 - Data integrity of event records.
 
-The trusted boundary lies between the internet and the front-end web server (enforced by a perimeter firewall/WAF), and between the front-end web server and the backend database server (enforced by an internal firewall). The backend database has no public-facing interface and is never directly accessible from the internet.
-
 #### 2. Vulnerabilities — What Are They?
  
 - A01: Broken Access Control (OWASP Top 10 #1)
