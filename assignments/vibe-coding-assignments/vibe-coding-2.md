@@ -36,7 +36,7 @@ I built a **three-scenario interactive demo**. Each scenario has a tab at the to
 Authentication failures occur when an application incorrectly implements identity verification, allowing attackers to compromise passwords, session tokens, or other credentials, or exploit flawed logic to assume another user's identity entirely. This vulnerability was previously known as "Broken Authentication" in the OWASP Top 10:2017.
 
 
-### Attack example — credential stuffing
+### Attack example - credential stuffing
  
 ```
 # Attacker obtains a list of 5 million email/password pairs leaked from another site.
@@ -60,4 +60,4 @@ A single side-by-side panel for three different attack types would be overwhelmi
 ## References
 - Claude: claude.ai
 - OWASP Top 10:2025 - A07 Authentication Failures: https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/
-- - Uber MFA fatigue attack 2022: https://www.bleepingcomputer.com/news/security/uber-hacked-internal-systems-breached-and-vulnerability-reports-stolen/
+- Uber MFA fatigue attack 2022: https://www.bleepingcomputer.com/news/security/uber-hacked-internal-systems-breached-and-vulnerability-reports-stolen/
