@@ -49,6 +49,8 @@ Authentication failures occur when an application incorrectly implements identit
 
 **Uber breach (2022):** An attacker repeatedly sent MFA push notifications to an Uber employee until the employee, fatigued by the alerts, approved one — a technique called MFA fatigue. This gave the attacker access to Uber's internal VPN and then their entire AWS and GCP infrastructure.
 
+---
+
 ## 4. Problems Encountered and Solutions
  
 ### Problem: Showing three scenarios without cluttering the UI
