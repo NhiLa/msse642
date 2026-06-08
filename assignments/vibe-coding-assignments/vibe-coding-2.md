@@ -16,6 +16,8 @@ Compared to Week 3, where I used Replit, Claude felt faster for a self-contained
 I built a **three-scenario interactive demo**. Each scenario has a tab at the top, and within each tab, the left panel shows a vulnerable server implementation while the right panel shows the secure equivalent.
  
 **Scenario 1 - Brute Force Login:** The user selects a password from a dropdown (including one correct password hidden among decoys) and clicks to simulate a login POST request. On the vulnerable side, the server accepts unlimited login attempts with no lockout; an attacker can eventually find the correct password by trying them all. On the secure side, the server tracks failed attempts per IP address and locks the account after 5 failures, returning '429 Too Many Requests.'
+
+![Scenario 1](../../scenario-1.png)
  
 **Scenario 2 - Weak Password Policy:** The user tries to register with various passwords, including top-10 breached passwords like "123456" and "password." The vulnerable server accepts any password 3+ characters long and stores it as an MD5 hash. The secure server rejects passwords found in breach databases (via HaveIBeenPwned), enforces complexity rules, and stores accepted passwords with bcrypt at cost factor 12.
  
