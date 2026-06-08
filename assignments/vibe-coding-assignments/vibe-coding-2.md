@@ -38,12 +38,9 @@ Authentication failures occur when an application incorrectly implements identit
 
 ### Attack example - credential stuffing
  
-```
-# Attacker obtains a list of 5 million email/password pairs leaked from another site.
-# They write a script that tries each pair against your login endpoint.
-# With no rate limiting, the script completes in minutes.
-# Even a 0.1% success rate = 5,000 compromised accounts.
-```
+
+Attacker obtains a list of 5 million email/password pairs leaked from another site. Then they write a script that tries each pair against your login endpoint. The script completes in minutes with no rate limiting. As a result, even a 0.1% success rate = 5,000 compromised accounts.
+
 
 ### Real-world incidents
 
