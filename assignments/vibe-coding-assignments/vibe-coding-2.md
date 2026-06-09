@@ -44,7 +44,7 @@ Attacker obtains a list of 5 million email/password pairs leaked from another si
 
 ### Real-world incidents
 
-**Uber breach (2022):** An attacker repeatedly sent MFA push notifications to an Uber employee until the employee, fatigued by the alerts, approved one — a technique called MFA fatigue. This gave the attacker access to Uber's internal VPN and then their entire AWS and GCP infrastructure.
+**Uber breach (2022):** An attacker repeatedly sent MFA push notifications to an Uber employee until the employee, fatigued by the alerts, approved one, a technique called MFA fatigue. This gave the attacker access to Uber's internal VPN and then their entire AWS and GCP infrastructure.
 
 ---
 
