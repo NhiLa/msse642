@@ -9,7 +9,7 @@
 
 ## 2. Description of the Program
 
-**Default admin credentials never changed:** The user tries logging into an admin panel using well-known default credential pairs like `admin/admin` and `root/toor`. The vulnerable server still has these vendor defaults active and grants full superadmin access. The secure server disables default accounts during a forced first-boot setup wizard, so the same credentials are rejected with `401 Unauthorized`.
+**Default admin credentials never changed:** The user tries logging into an admin panel using well-known default credential pairs like `admin/admin` and `root/toor`. The vulnerable server still has these vendor defaults active and grants full superadmin access. The secure server disables default accounts during a forced first-boot setup wizard, so the same credentials are rejected with `401 Unauthorized`. 
 
 ![Default admin credentials never changed](../../images/admin.png)
 
