@@ -29,8 +29,11 @@ Security misconfiguration occurs when an application, server, framework, or clou
 ### Attack example
  
 Step 1: The attacker runs a Shodan or Censys scan for exposed admin login pages.
+
 Step 2: The tool returns 50,000+ matches within minutes, with no exploit code required.
+
 Step 3: The attacker filters results and tries "admin/admin" against each one at scale.
+
 Step 4: The success rate is low per target, but the scan covers tens of thousands of targets.
 
 ### Real-world incidents
