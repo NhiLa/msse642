@@ -93,11 +93,12 @@ Modern systems now check for signs of life (micro-movements, 3D depth, blood flo
 
 ## Sources
 
-1. Entrust Cybersecurity Institute. (2024). 2025 identity fraud report. Entrust. https://www.entrust.com/sites/default/files/documentation/reports/2025-identity-fraud-report.pdf
-2. Pindrop. (2025). 2025 voice intelligence and security report. https://www.pindrop.com/research/report/voice-intelligence-security-report/
-3. Regula. (2024, September 30). Deepfake fraud doubles down: 49% of businesses now hit by audio and video scams [Press release]. GlobeNewswire. https://www.globenewswire.com/news-release/2024/09/30/2955054/0/en/Deepfake-Fraud-Doubles-Down-49-of-Businesses-Now-Hit-by-Audio-and-Video-Scams-Regula-s-Survey-Reveals.html
-4. Deloitte Center for Financial Services. (2024, May 28). Generative AI is expected to magnify the risk of deepfakes and other fraud in banking. Deloitte. https://www.deloitte.com/us/en/insights/industry/financial-services/deepfake-banking-fraud-risk-on-the-rise.html
-5. National Counterterrorism Innovation, Technology, and Education Center. (2024). Deepfakes and fraud: Real-world examples. University of Nebraska. https://digitalcommons.unomaha.edu/ncitereportsresearch/136/
-6. Keepnet Labs. (2026). Deepfake statistics and trends. https://keepnetlabs.com/blog/deepfake-statistics-and-trends
-7. Identity Management Institute. (2024). Deepfake risks to identity and access management. https://identitymanagementinstitute.org/deepfake-risks-to-identity-and-access-management/
-8. Monetary Authority of Singapore. (2025, September). Cyber risks associated with deepfakes. https://www.mas.gov.sg/-/media/mas-media-library/regulation/circulars/trpd/cyber-risks-associated-with-deepfakes.pdf
+1. Claude.ai
+2. Deloitte Center for Financial Services. (2024, May 28). Generative AI is expected to magnify the risk of deepfakes and other fraud in banking. Deloitte. https://www.deloitte.com/us/en/insights/industry/financial-services/deepfake-banking-fraud-risk-on-the-rise.html
+3. Entrust Cybersecurity Institute. (2024). 2025 identity fraud report. Entrust. https://www.entrust.com/sites/default/files/documentation/reports/2025-identity-fraud-report.pdf
+4. Identity Management Institute. (2024). Deepfake risks to identity and access management. https://identitymanagementinstitute.org/deepfake-risks-to-identity-and-access-management/
+5. Keepnet Labs. (2026). Deepfake statistics and trends. https://keepnetlabs.com/blog/deepfake-statistics-and-trends
+6. Monetary Authority of Singapore. (2025, September). Cyber risks associated with deepfakes. https://www.mas.gov.sg/-/media/mas-media-library/regulation/circulars/trpd/cyber-risks-associated-with-deepfakes.pdf
+7. National Counterterrorism Innovation, Technology, and Education Center. (2024). Deepfakes and fraud: Real-world examples. University of Nebraska. https://digitalcommons.unomaha.edu/ncitereportsresearch/136/
+8. Pindrop. (2025). 2025 voice intelligence and security report. https://www.pindrop.com/research/report/voice-intelligence-security-report/
+9. Regula. (2024, September 30). Deepfake fraud doubles down: 49% of businesses now hit by audio and video scams [Press release]. GlobeNewswire. https://www.globenewswire.com/news-release/2024/09/30/2955054/0/en/Deepfake-Fraud-Doubles-Down-49-of-Businesses-Now-Hit-by-Audio-and-Video-Scams-Regula-s-Survey-Reveals.html
