@@ -61,13 +61,16 @@ There is no single magic fix. Deepfake generation and deepfake detection are in 
 
 ### What actually helps:
 
-** Secret code words (out-of-band verification)**
+**Secret code words (out-of-band verification)**
+
 Before any big money transfer or sensitive action, use a pre-agreed codeword sent through a *completely separate channel*. A deepfake on a video call can't know your secret word.
 
-** Two-person approval rules**
+**Two-person approval rules**
+
 No single employee can authorize a large wire transfer alone. Require two people to confirm, independently. One deepfake call can't fool two separate people through two separate channels simultaneously.
 
-** Better ID verification software**
+**Better ID verification software**
+
 Modern systems now check for signs of life (micro-movements, 3D depth, blood flow) that are hard for AI to fake. This is called **liveness detection**.
 
 ---
