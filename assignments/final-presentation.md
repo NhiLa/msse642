@@ -28,7 +28,7 @@ The cases we often see are a celebrity's face swapped onto a movie character, or
 | How often humans correctly spot a deepfake | Only **24.5%** of the time |
 | Projected US fraud losses from AI by 2027 | **$40 billion** |
 
-The scary part:\ is that we can't detect deepfakes. Humans are basically guessing.
+The scary part is that we can't detect deepfakes. Humans are basically guessing.
 
 ---
 
