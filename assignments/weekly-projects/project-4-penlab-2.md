@@ -94,7 +94,7 @@ hiking-club/
 └── admin.html
 
 ### Issues Encountered
-- **Agentic tool used:** This project was completed with the assistance of Claude AI (Anthropic), which was used as an agentic coding tool to generate the full application code, including all routes, templates, and database schema. Claude also provided step-by-step guidance throughout the entire lab setup, deployment, and pen testing process.
+- **Agentic tool used:** This project was completed with the assistance of Claude AI (Anthropic), which was used as an agentic coding tool to generate the full application code, including all routes, templates, and database schema. Claude also provided necessary guidance throughout the entire lab setup, deployment, and pen testing process when I encountered a problem.
 - **ARM64 compatibility:** Since the lab runs on Apple Silicon (M1 Pro), all VMs use ARM64 architecture which required careful selection of compatible packages.
 - **File transfer:** The app was zipped and transferred to the deployment VM using `scp` from the Mac host to the Ubuntu Server VM. The initial transfer failed because the VM cannot locate the exact directory of the zip file. I need to find a way to transfer it to the virtual machine using the Mac terminal.
 
@@ -130,7 +130,7 @@ The Hiking Club web application was deployed on a dedicated **Ubuntu Server 26.0
 7. Verified the app was accessible from the Kali VM browser at `http://172.16.203.132:5000`
 
 ### Problems Encountered
-- **File transfer path:** The `scp` command initially failed because the VM could not locate the exact directory of the zip file. Through the assistance of Claude, I found a way to transfer it to the virtual machine using the Mac terminal.
+- **File transfer path:** The `scp` command initially failed because the VM could not locate the exact directory of the zip file. With Claude's assistance, I found a way to transfer it to the virtual machine using the Mac terminal.
 
 ### Screenshot
 ![App Running on Ubuntu Server](../../images/ubuntu-vm-terminal.png)
