@@ -4,7 +4,7 @@
 
 ## What Is a Deepfake?
 
-A **deepfake** is a video, photo, or audio clip where AI has replaced or fabricated someone's face or voice — so convincingly that it looks and sounds completely real.
+A **deepfake** is a video, photo, or audio clip where AI has replaced or fabricated someone's face or voice, so convincingly that it looks and sounds completely real.
 
 The cases we often see are a celebrity's face swapped onto a movie character, or a politician saying something funny that they never said.
 
@@ -28,7 +28,7 @@ The cases we often see are a celebrity's face swapped onto a movie character, or
 | How often humans correctly spot a deepfake | Only **24.5%** of the time |
 | Projected US fraud losses from AI by 2027 | **$40 billion** |
 
-The scary part: we are *terrible* at detecting deepfakes. Humans are basically guessing.
+The scary part:\ is that we can't detect deepfakes. Humans are basically guessing.
 
 ---
 
@@ -38,45 +38,26 @@ The scary part: we are *terrible* at detecting deepfakes. Humans are basically g
 
 Here's what happened, step by step:
 
-1. An employee in Hong Kong gets an email, supposedly from the company's CFO in London, asking for a confidential money transfer
-2. The employee is suspicious — this feels off
-3. So they ask for a **video call to verify** — a totally reasonable thing to do
+1. An employee in Hong Kong gets an email, supposedly from the company's CFO in London, asking for a confidential money transfer.
+2. The employee is suspicious; this feels off.
+3. So they ask for a **video call to verify**, a totally reasonable thing to do.
 4. On the call: the CFO shows up. So do four other colleagues. Voices match. Faces match. It all looks normal.
-5. The employee feels reassured and authorizes the transfers
+5. The employee feels reassured and authorizes the transfers.
 
 **Every single person on that call was an AI deepfake.**
 
-The attackers had built fake versions of all five people using publicly available footage from the internet — conference recordings, news clips, company videos.
+The attackers had built fake versions of all five people using publicly available footage from the internet: conference recordings, news clips, and company videos.
 
 ### The result: **$25.6 million** wired to fraudsters in a single day.
 
-This wasn't a simple email scam. The employee did *everything right* by asking for a video call — and still got fooled.
-
----
-
-## Why This Breaks Our Security Assumptions
-
-For decades, security has been built on one core idea:
-
-> *"I can verify who I'm talking to by seeing their face or hearing their voice."*
-
-**That assumption is now broken.**
-
-| Thing we trusted | Why it no longer works |
-|---|---|
-| A phone call from your boss | Voice can be cloned in real time |
-| A video call with your team | Faces can be synthesized live |
-| A selfie to verify your ID | AI can inject a fake face into the camera feed |
-| Your own ability to spot fakes | We're right only 1 in 4 times |
-
-This is a fundamental problem for **authentication** — the process of proving who you are — which is at the heart of almost every security system.
+This wasn't a simple email scam. The employee did *everything right* by asking for a video call and still got fooled.
 
 ---
 
 ## What Can We Do?
 
 ### The hard truth first:
-There is no single magic fix. Deepfake generation and deepfake detection are in an arms race — as one improves, so does the other.
+There is no single magic fix. Deepfake generation and deepfake detection are in an arms race as one improves, so does the other.
 
 ### What actually helps:
 
