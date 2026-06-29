@@ -12,9 +12,9 @@ The cases we often see are a celebrity's face swapped onto a movie character, or
 
 ### How easy is it to make one?
 
-- A convincing **voice clone** can be built from as little as **3 seconds of audio**
-- Free and cheap tools exist online, no technical expertise required
-- Attackers harvest voices and faces from YouTube, LinkedIn, podcasts, and social media
+- A convincing **voice clone** can be built from as little as **3 seconds of audio**.
+- Free and cheap tools exist online, no technical expertise required.
+- Attackers harvest voices and faces from YouTube, LinkedIn, podcasts, and social media.
 
 ---
 
