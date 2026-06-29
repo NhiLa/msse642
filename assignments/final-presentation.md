@@ -22,11 +22,11 @@ The cases we often see are a celebrity's face swapped onto a movie character, or
 
 | Fact | Number |
 |---|---|
-| Deepfake attacks attempted worldwide (2024) | **1 every 5 minutes** |
-| Businesses hit by deepfake fraud (2024) | **1 in 2** |
-| Rise in deepfake attacks at call centers (2024) | **+1,300%** |
-| How often humans correctly spot a deepfake | Only **24.5%** of the time |
-| Projected US fraud losses from AI by 2027 | **$40 billion** |
+| Deepfake attacks attempted worldwide (2024) | **1 every 5 minutes** (Entrust Cybersecurity Institute, 2024) |
+| Businesses hit by deepfake fraud (2024) | **1 in 2** (Regula, 2024) |
+| Rise in deepfake attacks at call centers (2024) | **+1,300%** (Pindrop, 2025) |
+| How often humans correctly spot a deepfake | Only **24.5%** of the time (Regula, 2024) |
+| Projected US fraud losses from AI by 2027 | **$40 billion** (Deloitte Center for Financial Services, 2024) |
 
 The scary part is that we can't detect deepfakes. Humans are basically guessing.
 
@@ -34,7 +34,7 @@ The scary part is that we can't detect deepfakes. Humans are basically guessing.
 
 ## A Real Story: The $25 Million Video Call
 
-### Arup Engineering — Hong Kong, January 2024
+### Arup Engineering — Hong Kong, January 2024 (National Counterterrorism Innovation, Technology, and Education Center, 2024)
 
 Here's what happened, step by step:
 
@@ -48,7 +48,7 @@ Here's what happened, step by step:
 
 The attackers had built fake versions of all five people using publicly available footage from the internet: conference recordings, news clips, and company videos.
 
-### The result: **$25.6 million** wired to fraudsters in a single day.
+### The result: **$25.6 million** wired to fraudsters in a single day (National Counterterrorism Innovation, Technology, and Education Center, 2024).
 
 This wasn't a simple email scam. The employee did *everything right* by asking for a video call and still got fooled.
 
