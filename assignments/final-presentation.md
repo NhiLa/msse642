@@ -56,11 +56,6 @@ This wasn't a simple email scam. The employee did *everything right* by asking f
 
 ## What Can We Do?
 
-### The hard truth first:
-There is no single magic fix. Deepfake generation and deepfake detection are in an arms race as one improves, so does the other.
-
-### What actually helps:
-
 **Secret code words (out-of-band verification)**
 
 Before any big money transfer or sensitive action, use a pre-agreed codeword sent through a *completely separate channel*. A deepfake on a video call can't know your secret word.
